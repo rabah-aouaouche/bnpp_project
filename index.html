@@ -10,6 +10,126 @@
     <title>Document</title>
 </head>
 <body>
+  <header>
+    <!--Début de la Barre de navigation -->
+    <nav class="navbar navbar-expand-lg bg-white bordure "  >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo-banque.svg" alt="Bootstrap" width="165" height="34"> <h6>La banque d'un monde qui change</h6>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                NOS SERVICES
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Particuliers</a></li>
+                <li><a class="dropdown-item" href="#">Professionels</a></li>
+                <li><a class="dropdown-item" href="#">Entreprises</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Autre</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">PRÉ-DOMICILIATION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">RÉGLEMENTATION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">NOUS CONNAÎTRE</a>
+            </li>
+            
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 rsrh" type="search" placeholder="Recherche" aria-label="Search">
+            <button class="btn btn-outline-success rbtn-search" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="but">
+      <!-- button modal 1 accès aux comptes -->
+      <button class="ibut" type="button" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-box-arrow-in-right"></i> Accès aux comptes</button>
+            <!-- Modal accès aux comptes -->
+            <div class="modal modal-xl" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title text-white fs-5 " id="exampleModalLabel">Accès aux comptes</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+
+
+                    <div class="espace-client">
+                      <h6>ACCÉDER À VOTRE ESPACE<br>CLIENT</h6>
+                      <div class="mb-3 row">
+                          <div class="col-sm-10">
+                            <input type="email"  class="form-control" id="staticEmail" placeholder="Votre numéro client:">
+                          </div>
+                      </div>
+                      <div class="mb-3 row">
+                          <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Saisir votre Mot de passe:">
+                          </div>
+                      </div>
+                      <button type="button" class="btn btn-success">valider</button>  
+                    </div>
+
+                    <div class="espace-client-demo">
+                      <h5>Bienvenue sur votre nouvel accès de banque en ligne</h5>
+                      <h6>Espace sécurisé BNP Paribas EL Djazaïr:</h6>
+                      <ul>
+                        <li>
+                          <a style="text-decoration: none;" href="">Aide à la connexion et sécurité internet</a>
+                        </li>
+                        <li>
+                          <a style="text-decoration: none;" href="">FAQ</a>
+                        </li>
+                      </ul>
+                        <h6>Démonstration:</h6>
+                        <div class="demonstration">
+                          <div class="particulier-and-icon">
+                            <i class="bi bi-person-check-fill"></i>
+                            <a style="text-decoration: none;" href="#">Particulier</a>
+                          </div>
+                          <div class="professionel-and-icon">
+                            <i class="bi bi-person-vcard"></i>
+                            <a style="text-decoration: none;" href="#">Professionel</a>
+                          </div>
+                          <div class="entreprise-and-icon">
+                            <i class="bi bi-building-fill"></i>
+                            <a style="text-decoration: none;" href="#">Entreprise</a>
+                          </div>
+                        </div>
+
+                        <h6>Des questions : Contactez le Direct Call:</h6>
+                        <li>
+                          <a style="text-decoration: none;" href="">formulaire en ligne</a>
+                        </li>
+                        <li>
+                          <a style="text-decoration: none;" href="">numéros</a>
+                        </li>
+                    </div>
+                    
+
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          <!-- End Modal accès aux comptes -->
+      <!-- button modal 2 devenir client -->      
+      <button class="ibut" type="button"><i class="bi bi-person-fill"></i> <a href="/devenir-client.html" >Devenir client</a></button>
+    </div>
+    <!--Fin de la Barre de navigation -->
+  </header>
   <!-- +++++++++++++++++++++++++++++slaider+++++++++++++++++++++++++++ -->
     <section class="ihome">
     <div id="carousel" class="carousel slide" data-bs-ride="carousel">
@@ -31,27 +151,27 @@
             <div class="container">
               <h2>CONNECTE SUR NOS </br> GUICHETS</br> AUTOMATIQUES</h2>
               <p>Vous pouvez déposer vos billets et vos chèques</p>
-              <div class="but">
+              <a href=""><div class="but">
                 <button class="ibut" type="button">EN SAVOIR PLUS</button>
-              </div>
+              </div></a>
             </div>
           </div>
           <div class="carousel-item" style="background-image: url(./img/bnppi1.jpg);">
             <div class="container">            
               <h2>FABRIKADEMY</h2>
               <p>Découvrez votre formation développeur Web et web mobil</p>
-              <div class="but">
+              <a href=""><div class="but">
                 <button class="ibut" type="button">EN SAVOIR PLUS</button>
-              </div>
+              </div></a>
             </div>
           </div>
           <div class="carousel-item" style="background-image: url(./img/pbnpi2.jpg);">
             <div class="container">
               <h2>Recharge téléphonique</h2>
               <p>Disponible sur tous nos guichets automatiques</p>
-              <div class="but">
+              <a href=""><div class="but">
                 <button class="ibut" type="button">EN SAVOIR PLUS</button>
-              </div>
+              </div></a>
             </div>
           </div>
         </div>
