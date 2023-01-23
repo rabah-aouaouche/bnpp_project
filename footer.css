@@ -1,6 +1,10 @@
 a {
     color: white;
+    
+    
   }
+  
+
   .bgl{
     background-color: #286C50;
   }
@@ -29,6 +33,10 @@ a {
   .ad{
     display: flex;
     flex: row;
+
+  }
+  .bp{
+    color: white;
   }
   @media (max-width: 767px) {
     .shfooter ul {
